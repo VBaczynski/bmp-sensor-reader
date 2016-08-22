@@ -103,6 +103,9 @@ $a = 44330 * ( 1 - pow( ( $p / 101625 ), 0.1903 ) );
 // calculating pressure at sea level
 $p0 = $p / pow( (1 - $a / 44330), 5.255 );
 
+// Making it prettier
+$a = intval( $a );
+
 // converting Pressure from hPa to mm Hg
 $p = intval( $p / 1.3332239);
 $p = $p / 100;
